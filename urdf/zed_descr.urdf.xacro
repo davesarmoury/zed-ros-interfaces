@@ -140,5 +140,13 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </joint>
 
         <link name="$(arg camera_name)_temp_right_link" />
+
+        <joint name="$(arg camera_name)_imu_joint" type="fixed">
+            <origin xyz="0 0.0093 0" rpy="0 0 0"/>
+            <parent link="$(arg camera_name)_mag_link"/>
+            <child link="$(arg camera_name)_imu_link"/>
+        </joint>
+
+        <link name="$(arg camera_name)_imu_link"/>
     </xacro:if>
 </robot>
