@@ -24,8 +24,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <xacro:include filename="$(find zed_interfaces)/urdf/include/materials.urdf.xacro" />
 
     <!-- Arguments -->
-    <xacro:arg name="camera_name"   default="zed2" />
-    <xacro:arg name="camera_model"  default="zed2" />
+    <xacro:arg name="camera_name"   default="zed2i" />
+    <xacro:arg name="camera_model"  default="zed2i" />
     <xacro:arg name="base_frame"    default="zed_link" />
     <xacro:arg name="cam_pos_x"     default="0.0" />
     <xacro:arg name="cam_pos_y"     default="0.0" />
